@@ -2,13 +2,13 @@
   "name": "portfolio-by-ai-backend",
   "version": "1.0.0",
   "description": "This is the backend of my project portfolio-by-ai",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/index.js",
-    "prisma:generate": "prisma generate --schema=src/prisma/schema.prisma",
-    "prisma:migrate": "prisma migrate dev --name init --schema=src/prisma/schema.prisma",
-    "seed": "node src/prisma/seed.js"
+    "start": "nodemon index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "seed": "node prisma/seed.js"
   },
   "keywords": [],
   "author": "Muhammad Awais",
